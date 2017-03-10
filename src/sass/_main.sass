@@ -1,0 +1,156 @@
+// Normally mainpage styles
+.main
+	min-height: 769px
+	background: url(../img/main-bg.png)center no-repeat
+	+cover
+	opacity: 0.9
+.header
+	padding: 50px 0 0 0
+	+clr
+	&__logo 
+		float: left
+		a
+			+hide-text
+	&__info
+		float: right
+		a
+			font-weight: 300
+			font-size: 17px
+			color: white
+			position: relative
+			text-transform: none
+			width: 59%
+			text-align: center
+			&:after
+				content: ''
+				display: block
+				z-index: 1
+				position: absolute
+				width: 90%
+				margin: auto
+				right: 0
+				bottom: -9px
+				height: 2px
+				background-image: linear-gradient(to top, #f63d3c 0%, #f65639 48%, #f77138 100%)
+
+// intro
+.intro
+	color: white
+	padding-top: 80px
+	p
+		font-weight: 300
+		font-size: 16px
+	.title 
+		text-align: left
+		color: white
+	&__content
+		max-width: 476px
+	&__text
+		margin-bottom: 44px	
+	&__list
+		font-size: 0
+		margin-bottom: 46px
+.intro__list-item
+	padding-left: 15px
+	position: relative
+	&:before
+		content: ''
+		display: block
+		background-image: linear-gradient(to top, #f63d3c 0%, #f65639 48%, #f77138 100%)
+		width: 10px
+		height: 2px
+		position: absolute
+		top: 50%
+		left: 0
+	&:not(:last-child)
+		margin-bottom: 8px
+.item
+	background: url(../img/item-bg.png)center no-repeat
+	+cover
+	min-height: 2808px
+	z-index: -1
+	position: relative
+	top: -62px
+	.title
+		position: relative
+		top: 50px
+// unit
+.unit 
+	text-align: center
+	padding: 120px 0
+	background: url(../img/unit-bg.png)center no-repeat
+	+cover
+	.subtitle
+		margin-bottom: 45px
+	&__list
+		display: inline-block
+		vertical-align: top
+		font-size: 0
+		width: 31.33%
+		&:not(:last-child)
+			margin-right: 1%
+	&__btn
+		padding: 45px 0
+.unit__list-item
+	text-align: left
+	display: block
+	font: 700 16px/1 "Roboto", sans-serif, arial 
+	color: black
+	&:not(:last-child)
+		margin-bottom: 24px
+	&:nth-of-type(3) .unit__list-pic
+		margin-bottom: 11px
+.unit__list-title
+	font: 400 31px/1 "Cocomat", sans-serif, arial
+	color: #242330
+	margin-bottom: 24px
+	text-align: center
+.unit__list-wrapper
+	padding: 24px 24px 0 25px
+	background-color: white
+	height: 326px
+.unit__list-pic
+	// width: 258px
+	height: 168px
+	position: relative
+	overflow: hidden
+	margin-bottom: 35px
+	img
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		height: 100%
+		width: 100%
+		margin: auto
+.unit__list-name
+	margin-bottom: 33px
+	font-size: 18px
+.unit__list-content
+	+clr
+	margin-bottom: 36px
+	.unit__list-desc 
+		float: left
+		color: #242330
+		font-weight: 300
+		line-height: 24px
+	.unit__list-price
+		float: right
+		font-size: 24px
+		color: #202351
+		line-height: 24px
+.unit__list-details
+	background-color: white
+	border-top: 1px solid #e1e1e1
+	+clr
+.unit__list-col
+	float: left
+	height: 59px
+	width: 50%
+	a
+		+vertical
+		display: block
+		font-size: 14px
+		height: 100%
+		color: #242330
