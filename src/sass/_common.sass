@@ -60,11 +60,22 @@ img
 	margin-bottom: 50px
 	span
 		color: #f77038
+	+r(767)
+		font-size: 18px
+		margin-bottom: 25px
 .h3
 	color: #242330
 	font-size: 20px
 	border: 10px solid #f63d3c
 	padding-left: 10px
+.section__number
+	color: #f77038
+	font-family: Roboto
+	font-size: 98px
+	font-weight: 700
+	position: absolute
+	top: 40%
+	left: -25px
 // btns
 .btn
 	background-image: linear-gradient(to right, #f63d3c 0%, #f65639 48%, #f77138 100%)
@@ -113,6 +124,11 @@ img
 	margin: 0 auto
 	position: relative
 	+clr
+	+r(1000)
+		padding: 0 20px
+	+r(767)
+		padding: 0
+		width: 90%
 .inner
 	@extend %inner
 
@@ -120,9 +136,11 @@ img
 .nav__list
 	font-size: 0
 	position: fixed
-	right: 0
+	right: 30px
 	top: 50%
 	z-index: 200
+	+r(767)
+		right: 0
 .nav__list-item
 	margin-bottom: 20px
 	padding-left: 100px
@@ -138,6 +156,7 @@ img
 		font-size: 24px
 		font-weight: 700
 		opacity: 1
+		text-indent: -7px
 		&:before
 			content: ''
 			display: block
