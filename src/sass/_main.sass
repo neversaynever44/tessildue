@@ -176,30 +176,33 @@
 // unit
 .unit 
 	text-align: center
-	padding: 120px 0
+	padding: 115px 0
 	position: relative
 	background: url(../img/unit-bg.png)center no-repeat
-	+clr
 	+cover
 	.subtitle
-		margin-bottom: 45px
+		color: #242330
+		font-size: 20px
+		font-weight: 400
+		margin-bottom: 33px
 	+r(767)
 		padding: 45px 0
 	&__list
 		float: left
 		font-size: 0
-		width: 31.33%
+		width: 32%
 		+clr
 		&:not(:last-child)
 			margin-right: 2%
 		+r(767)
-			width: 47.33%
+			width: 48%
 			&:not(:last-child)
 				margin-bottom: 30px
 		+r(425)
-			width: 97.33%
-	&__btn
-		padding: 45px 0
+			width: 98%
+	&__wrapper
+		+clr
+		margin-bottom: 40px
 .unit__list-item
 	text-align: left
 	display: block
@@ -208,7 +211,7 @@
 	&:not(:last-child)
 		margin-bottom: 24px
 	&:nth-of-type(3) .unit__list-pic
-		margin-bottom: 11px
+		margin-bottom: 10px
 .unit__list-title
 	font: 400 31px/1 "Cocomat", sans-serif, arial
 	color: #242330
@@ -217,10 +220,11 @@
 .unit__list-wrapper
 	padding: 24px 24px 0 25px
 	background-color: white
-	height: 326px
+	height: 325px
+	overflow: hidden
 .unit__list-pic
 	// width: 258px
-	height: 168px
+	height: 166px
 	position: relative
 	overflow: hidden
 	margin-bottom: 35px
@@ -236,7 +240,7 @@
 		width: 100%
 		margin: auto
 .unit__list-name
-	margin-bottom: 33px
+	margin-bottom: 24px
 	font-size: 18px
 	+r(767)
 		margin-bottom: 15px
@@ -257,7 +261,8 @@
 		font-size: 17px
 .unit__list-desc,
 .unit__list-price
-	float: none
+	+r(767)
+		float: none
 .unit__list-details
 	background-color: white
 	border-top: 1px solid #e1e1e1
@@ -269,6 +274,6 @@
 	a
 		+vertical
 		display: block
-		font-size: 14px
+		font-size: 16px
 		height: 100%
 		color: #242330
