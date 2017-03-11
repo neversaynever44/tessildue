@@ -116,25 +116,35 @@
 	padding: 54px 0px
 	.inner
 		padding: 0 100px
+		+r(500)
+			padding: 0 10px
 .art__list
 	margin: 0 0 0 -2%
 .art__list-item 
 	width: 100%
 	display: table
 	margin-bottom: 70px
+	+r(767)
+		margin-bottom: 35px
 .art__list-content,
 .art__list-layout
 	// display: table-cell
 	// vertical-align: top
 	float: left
 	width: 45%
+	+r(767)
+		width: 100%
 .art__list-layout
 	margin-right: 30px
+	+r(767)
+		margin-right: 0
 .art__list-content:nth-child(2n) .art__list-title
 	max-width: 239px
 .art__list-item:nth-child(2n) .art__list-layout
 	margin-right: 0
 	margin-left: 30px 
+	+r(767)
+		margin-left: 0
 // .art__list-item:nth-child(odd) .art__list-content 
 // 	padding-left: 30px
 .art__list-item:nth-child(2n) .art__list-content 
@@ -165,6 +175,9 @@
 	opacity: 0.2
 	background-image: -webkit-linear-gradient(259deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%)
 	background-image: linear-gradient(191deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%)
+	+r(767)
+		max-width: none
+		width: 100%
 	// &:before
 	// 	z-index: 0
 	// 	content: ''

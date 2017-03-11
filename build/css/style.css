@@ -48,7 +48,7 @@ img { max-width: 100%; display: block; margin: 0 auto; }
 
 .h3 { color: #242330; font-size: 20px; border: 10px solid #f63d3c; padding-left: 10px; }
 
-.btn { background-image: -webkit-gradient(linear, left top, right top, from(#f63d3c), color-stop(48%, #f65639), to(#f77138)); background-image: -webkit-linear-gradient(left, #f63d3c 0%, #f65639 48%, #f77138 100%); background-image: linear-gradient(to right, #f63d3c 0%, #f65639 48%, #f77138 100%); text-transform: uppercase; color: white; text-align: center; padding: 22px 50px; width: 270px; outline: 0; border: 0; -webkit-transition: background-image 0.3s ease; transition: background-image 0.3s ease; }
+.btn { background-image: -webkit-gradient(linear, left top, right top, from(#f63d3c), color-stop(48%, #f65639), to(#f77138)); background-image: -webkit-linear-gradient(left, #f63d3c 0%, #f65639 48%, #f77138 100%); background-image: linear-gradient(to right, #f63d3c 0%, #f65639 48%, #f77138 100%); text-transform: uppercase; color: white; text-align: center; padding: 22px 50px; width: 280px; outline: 0; border: 0; -webkit-transition: background-image 0.3s ease; transition: background-image 0.3s ease; }
 .btn:hover { color: #343660; background-image: -webkit-gradient(linear, left top, right top, from(#93939c), color-stop(48%, #93939c), to(#93939c)); background-image: -webkit-linear-gradient(left, #93939c 0%, #93939c 48%, #93939c 100%); background-image: linear-gradient(to right, #93939c 0%, #93939c 48%, #93939c 100%); }
 .btn:active { position: relative; top: -2px; }
 
@@ -190,12 +190,19 @@ img { max-width: 100%; display: block; margin: 0 auto; }
  .header__logo{ margin-bottom: 15px; }
  .header__info{ max-width: auto; margin: auto; }
  .header__logo, .header__info{ float: none; text-align: center; }
+ .art__list-item{ margin-bottom: 35px; }
+ .art__list-content, .art__list-layout{ width: 100%; }
+ .art__list-layout{ margin-right: 0; }
+ .art__list-item:nth-child(2n) .art__list-layout{ margin-left: 0; }
+ .art__list-number{ max-width: none; width: 100%; }
  .unit{ padding: 45px 0; }
  .unit__list{ width: 48%; }
  .unit__list:not(:last-child){ margin-bottom: 30px; }
  .unit__list-pic{ margin-bottom: 15px; }
  .unit__list-name{ margin-bottom: 15px; height: 36px; overflow: hidden; }
  .unit__list-desc, .unit__list-price{ float: none; } }
+@media only screen and (max-width: 500px){
+ .art .inner{ padding: 0 10px; } }
 @media only screen and (max-width: 480px){
  .nav__list-link.is-active:before{ width: 40px; right: 30px; }
  .intro .title{ max-width: none; text-align: center; }
