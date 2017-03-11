@@ -183,7 +183,7 @@
 		color: #242330
 		font-size: 20px
 		font-weight: 400
-		margin-bottom: 33px
+		margin-bottom: 40px
 	+r(767)
 		padding: 45px 0
 	&__list
@@ -212,10 +212,12 @@
 	&:nth-of-type(3) .unit__list-pic
 		margin-bottom: 10px
 .unit__list-title
-	font: 400 31px/1 "Cocomat", sans-serif, arial
+	font-size: 31px
+	line-height: 1
 	color: #242330
 	margin-bottom: 24px
 	text-align: center
+	+Cocomat-regular
 .unit__list-wrapper
 	padding: 24px 24px 0 25px
 	background-color: white
@@ -243,6 +245,9 @@
 	font-size: 18px
 	+r(767)
 		margin-bottom: 15px
+		height: 36px
+	+r(425)
+		height: auto
 .unit__list-content
 	+clr
 	margin-bottom: 36px
@@ -276,3 +281,5 @@
 		font-size: 16px
 		height: 100%
 		color: #242330
+		+r(768)
+			font-size: 14px
