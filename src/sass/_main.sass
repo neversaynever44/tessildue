@@ -87,28 +87,39 @@
 	position: relative
 	top: -64px
 	padding: 54px 0px
+	.inner
+		padding: 0 100px
 .art__list
 	margin: 0 0 0 -2%
 .art__list-item 
 	width: 100%
 	display: table
+	margin-bottom: 70px
 .art__list-content,
 .art__list-layout
-	display: table-cell
-	vertical-align: top
-.art__list-item:nth-child(odd) .art__list-content 
-	padding-left: 30px
+	// display: table-cell
+	// vertical-align: top
+	float: left
+	width: 45%
+.art__list-layout
+	margin-right: 30px
+.art__list-content:nth-child(2n) .art__list-title
+	max-width: 239px
+.art__list-item:nth-child(2n) .art__list-layout
+	margin-right: 0
+	margin-left: 30px 
+// .art__list-item:nth-child(odd) .art__list-content 
+// 	padding-left: 30px
 .art__list-item:nth-child(2n) .art__list-content 
 	text-align: right
-	padding-right: 30px
+	// padding-right: 30px
 .art__list-item:nth-child(2n) .art__list-title,
 .art__list-item:nth-child(2n) .art__list-text
 	padding-left: 0
 	padding-right: 20px
 .art__list-item:nth-child(2n) .art__list-title
-	&:before
-		left: auto
-		right: 0
+	border-left: none
+	border-right: 3px solid #f63d3c
 .art__list-content
 	padding-top: 30px
 	position: relative
@@ -141,16 +152,7 @@
 	position: relative
 	padding-left: 20px
 	margin-bottom: 60px
-	&:before
-		display: block
-		content: ''
-		z-index: 1
-		position: absolute
-		top: 0
-		left: 0
-		height: 100%
-		width: 3px
-		background-color: #f63d3c
+	border-left: 3px solid #f63d3c
 .art__list-layout
 	position: relative
 	height: 240px
@@ -171,7 +173,6 @@
 		bottom: 0
 		opacity: 0.9
 		background-image: linear-gradient(60deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%)
-
 // unit
 .unit 
 	text-align: center
