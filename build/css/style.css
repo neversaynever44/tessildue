@@ -37,7 +37,7 @@ body { font-family: "Roboto", Arial, sans-serif; font-size: 16px; line-height: 1
 
 html, body, .out { min-height: 100%; }
 
-a { text-decoration: none; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; text-transform: uppercase; display: block; font: 700 16px/1 "Roboto", sans-serif, arial; }
+a { text-decoration: none; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; text-transform: uppercase; display: block; font: 700 16px/1 "Roboto", sans-serif, arial; }
 
 b { font-weight: 700; }
 
@@ -66,8 +66,8 @@ img { max-width: 100%; display: block; margin: 0 auto; }
 
 .nav__list-item { margin-bottom: 13px; padding-left: 100px; }
 
-.nav__list-link { color: #242330; font-weight: 300; position: relative; opacity: 0.3; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
-.nav__list-link:before { content: ""; display: block; z-index: 11; position: absolute; right: -100%; -webkit-transition: right 0.3s ease-in; transition: right 0.3s ease-in; }
+.nav__list-link { color: #242330; font-weight: 300; position: relative; opacity: 0.3; -webkit-transition: opacity 0.2s ease-in; transition: opacity 0.2s ease-in; }
+.nav__list-link:before { content: ""; display: block; z-index: 11; position: absolute; right: -100%; -webkit-transition: right 0.2s ease-in; transition: right 0.2s ease-in; }
 .nav__list-link.is-active { color: #f77038; font-size: 24px; font-weight: 700; opacity: 1; text-indent: -7px; }
 .nav__list-link.is-active:before { content: ""; display: block; z-index: 11; width: 124px; position: absolute; right: 49px; top: 50%; opacity: 1; height: 2px; background-image: -webkit-gradient(linear, left bottom, left top, from(#f63d3c), color-stop(48%, #f65639), to(#f77138)); background-image: -webkit-linear-gradient(bottom, #f63d3c 0%, #f65639 48%, #f77138 100%); background-image: linear-gradient(to top, #f63d3c 0%, #f65639 48%, #f77138 100%); }
 
@@ -86,7 +86,7 @@ img { max-width: 100%; display: block; margin: 0 auto; }
 .header__info { float: right; max-width: 150px; }
 .header__info a, .header__info button { font-weight: 300; font-size: 17px; color: white; position: relative; text-transform: none; text-align: center; line-height: 1.2; }
 .header__info a { margin-bottom: 5px; }
-.header__info button { margin: auto; display: block; background: none; }
+.header__info button { margin: auto; display: block; background: none; outline: 0; }
 .header__info button:after { content: ""; z-index: 11; display: block; position: absolute; width: 100%; height: 2px; bottom: -9px; -webkit-transition: bottom 0.2s ease-in; transition: bottom 0.2s ease-in; background-image: -webkit-gradient(linear, left bottom, left top, from(#f63d3c), color-stop(48%, #f65639), to(#f77138)); background-image: -webkit-linear-gradient(bottom, #f63d3c 0%, #f65639 48%, #f77138 100%); background-image: linear-gradient(to top, #f63d3c 0%, #f65639 48%, #f77138 100%); }
 .header__info button:hover { color: #f77038; }
 .header__info button:hover:after { bottom: 0; }
@@ -126,7 +126,8 @@ img { max-width: 100%; display: block; margin: 0 auto; }
 .art__list-item:nth-child(2n) .art__list-title { border-left: none; border-right: 3px solid #f63d3c; }
 
 .art__list-content { padding-top: 30px; position: relative; }
-.art__list-content:before { content: "01"; z-index: 1; display: block; position: absolute; top: 0; font-size: 98px; font-weight: 700; bottom: 0; max-width: 184px; left: 0; color: #f0f0f4; right: 0; margin: auto; text-align: center; opacity: 0.12; background-image: -webkit-linear-gradient(259deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%); background-image: linear-gradient(191deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%); }
+
+.art__list-number { position: absolute; top: 0; font-size: 98px; font-weight: 700; bottom: 0; max-width: 184px; left: 0; color: #eff0f3; right: 0; margin: auto; text-align: center; opacity: 0.2; background-image: -webkit-linear-gradient(259deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%); background-image: linear-gradient(191deg, rgba(17, 23, 82, 0.7) 0%, transparent 100%); }
 
 .art__list-text { padding-left: 20px; color: #242330; font-weight: 300; }
 

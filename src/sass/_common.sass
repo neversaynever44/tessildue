@@ -42,7 +42,7 @@ body,
 
 a
 	text-decoration: none
-	+tr(all .3s ease)
+	+tr(all .2s ease)
 	text-transform: uppercase
 	display: block
 	font: 700 16px/1 "Roboto", sans-serif, arial
@@ -146,15 +146,14 @@ img
 	font-weight: 300
 	position: relative
 	opacity: 0.3
-	+tr(opacity .3s ease)
-	+tr(all .3s ease-out)
+	+tr(opacity .2s ease-in)
 	&:before
 		content: ''
 		display: block
 		z-index: 11
 		position: absolute
 		right: -100%
-		+tr(right .3s ease-in)
+		+tr(right .2s ease-in)
 	&.is-active
 		color: #f77038
 		font-size: 24px
