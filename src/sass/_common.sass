@@ -105,6 +105,7 @@ img
 	color: #f77038
 	position: relative
 	display: inline-block
+	+tr(color .3s ease-in)
 	&:after
 		content: ''
 		display: block
@@ -113,11 +114,13 @@ img
 		height: 2px
 		bottom: -9px
 		width: 100%
-		+tr(bottom .3s ease)
+		+tr(bottom .2s ease-in)
 		background-image: linear-gradient(to right, #f63d3c 0%, #f65639 48%, #f77138 100%)
 	&:hover 
+		color: #676a72
 		&:after
 			bottom: 0px
+			background-image: linear-gradient(to right, #d0cdcd 0%, #757575 48%, #757372 100%)
 %inner
 	width: 100%
 	max-width: 964px
@@ -151,6 +154,13 @@ img
 	opacity: 0.3
 	+tr(opacity .3s ease)
 	+tr(all .3s ease-out)
+	&:before
+		content: ''
+		display: block
+		z-index: 11
+		position: absolute
+		right: -100%
+		+tr(right .3s ease-in)
 	&.is-active
 		color: #f77038
 		font-size: 24px
@@ -161,7 +171,7 @@ img
 			content: ''
 			display: block
 			z-index: 11
-			width: 164px
+			width: 124px
 			position: absolute
 			right: 49px
 			top: 50%

@@ -11,36 +11,45 @@
 	+clr
 	&__logo 
 		float: left
-		+r(900)
+		+r(767)
 			margin-bottom: 15px
 		a
 			+hide-text
 	&__info
 		float: right
-		a
+		max-width: 150px
+		+r(767)
+			max-width: auto
+			margin: auto
+		a,
+		button
 			font-weight: 300
 			font-size: 17px
 			color: white
 			position: relative
 			text-transform: none
-			max-width: 150px
 			text-align: center
 			line-height: 1.2
-			+r(767)
-				margin: auto
+		a
+			margin-bottom: 5px
+		button
+			margin: auto
+			display: block
+			background: none
 			&:after
 				content: ''
+				z-index: 11
 				display: block
-				z-index: 1
 				position: absolute
-				width: 90%
-				margin: auto
-				right: 0
-				bottom: -9px
+				width: 100%
 				height: 2px
+				bottom: -9px
+				+tr(bottom .2s ease-in)
 				background-image: linear-gradient(to top, #f63d3c 0%, #f65639 48%, #f77138 100%)
-				+r(900)
-					width: 100%
+			&:hover
+				color: #f77038
+				&:after
+					bottom: 0
 	&__logo,
 	&__info
 		+r(767)
@@ -56,8 +65,10 @@
 	.title 
 		text-align: left
 		color: white
+		line-height: 40px
 	&__content
-		max-width: 476px
+		width: 45%
+		padding: 0 10px
 	&__text
 		margin-bottom: 44px	
 	&__list
@@ -285,3 +296,5 @@
 		color: #242330
 		+r(768)
 			font-size: 14px
+		&:hover
+			text-decoration: underline
