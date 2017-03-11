@@ -5,6 +5,7 @@
 	+cover
 	opacity: 0.9
 	position: relative
+	padding: 0 0 115px 0
 .header
 	padding: 50px 0 0 0
 	+clr
@@ -78,15 +79,14 @@
 		margin-bottom: 8px
 // art
 .art
-	background: url(../img/item-bg.png)center no-repeat
-	+cover
-	min-height: 2808px
+	background: url(../img/item-bg.png) center no-repeat
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
 	z-index: -1
 	position: relative
-	top: -62px
-	.title
-		position: relative
-		top: 50px
+	top: -64px
+	padding: 54px 0px
 .art__list
 	margin: 0 0 0 -2%
 .art__list-item 
@@ -246,6 +246,7 @@
 	+r(767)
 		margin-bottom: 15px
 		height: 36px
+		overflow: hidden
 	+r(425)
 		height: auto
 .unit__list-content

@@ -11,7 +11,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
   var windscroll = $(window).scrollTop();
     $('.out section').each(function(i){
-      if($(this).position().top <= windscroll +50) {
+      if($(this).position().top <= windscroll +350) {
         $('.nav__list-link.is-active').removeClass('is-active');
         $('.nav__list-link').eq(i).addClass('is-active');
       }
